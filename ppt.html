@@ -1,0 +1,79 @@
+export default function Home() { return ( <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white text-gray-800"> {/* Hero Section */} <section className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center"> <div> <h1 className="text-4xl md:text-5xl font-bold leading-tight"> Early PCOD Risk Detection <span className="text-pink-600">. Private. Affordable.</span> </h1> <p className="mt-6 text-lg text-gray-600"> A low-cost, privacy-first health screening solution designed to help young girls and women identify early PCOD risk at home — before symptoms become severe. </p> <div className="mt-8 flex gap-4"> <button className="px-6 py-3 bg-pink-600 text-white rounded-2xl shadow-lg hover:bg-pink-700 transition"> Check Risk Now </button> <button className="px-6 py-3 border border-pink-600 text-pink-600 rounded-2xl hover:bg-pink-50 transition"> Learn More </button> </div> </div> <div className="bg-white rounded-2xl shadow-xl p-6"> <img
+src="https://dummyimage.com/500x350/fce7f3/9d174d&text=Women+Health+Tech"
+alt="Women Health"
+className="rounded-xl"
+/> </div> </section>
+
+{/* Problem Section */}
+  <section className="bg-white py-16">
+    <div className="max-w-5xl mx-auto px-6 text-center">
+      <h2 className="text-3xl font-semibold">The Problem</h2>
+      <p className="mt-4 text-gray-600">
+        PCOD is often diagnosed late due to lack of awareness, high consultation costs,
+        social hesitation, and limited access to gynecologists — especially in early age groups.
+      </p>
+    </div>
+  </section>
+
+  {/* Solution Section */}
+  <section className="py-16 bg-pink-50">
+    <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+      {["At-home Screening", "AI-based Risk Analysis", "Doctor Consultation"].map((title) => (
+        <div key={title} className="bg-white rounded-2xl shadow-md p-6 text-center">
+          <h3 className="text-xl font-semibold text-pink-600">{title}</h3>
+          <p className="mt-3 text-gray-600">
+            Simple, non-invasive approach designed to support early awareness while maintaining medical reliability.
+          </p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {/* How It Works */}
+  <section className="py-16">
+    <div className="max-w-6xl mx-auto px-6">
+      <h2 className="text-3xl font-semibold text-center">How It Works</h2>
+      <div className="mt-10 grid md:grid-cols-4 gap-6">
+        {["Answer Basic Health Inputs", "Low-cost Test Kit", "Risk Score Generated", "Connect to Gynecologist"].map(
+          (step, i) => (
+            <div key={i} className="bg-white rounded-2xl shadow p-5 text-center">
+              <span className="text-pink-600 text-2xl font-bold">{i + 1}</span>
+              <p className="mt-3 text-gray-700">{step}</p>
+            </div>
+          )
+        )}
+      </div>
+    </div>
+  </section>
+
+  {/* Privacy & Trust */}
+  <section className="bg-white py-16">
+    <div className="max-w-5xl mx-auto px-6 text-center">
+      <h2 className="text-3xl font-semibold">Privacy Comes First</h2>
+      <p className="mt-4 text-gray-600">
+        User data is encrypted, anonymous, and shared with doctors only with consent.
+        No judgment. No pressure. Complete control.
+      </p>
+    </div>
+  </section>
+
+  {/* CTA */}
+  <section className="bg-pink-600 py-16 text-white">
+    <div className="max-w-5xl mx-auto px-6 text-center">
+      <h2 className="text-3xl font-semibold">Start Early. Stay Confident.</h2>
+      <p className="mt-4 opacity-90">
+        Early awareness can prevent long-term complications. Take the first step today.
+      </p>
+      <button className="mt-6 px-8 py-3 bg-white text-pink-600 rounded-2xl font-semibold shadow-lg hover:bg-pink-100 transition">
+        Get Started
+      </button>
+    </div>
+  </section>
+
+  {/* Footer */}
+  <footer className="py-6 text-center text-sm text-gray-500">
+    © 2025 • Women Health Early Detection Initiative
+  </footer>
+</div>
+
+); }
